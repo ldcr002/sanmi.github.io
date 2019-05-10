@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Sanmi&#39;s blog</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://blog.sanmi.site/"/>
+  <updated>2019-05-10T05:18:24.438Z</updated>
+  <id>http://blog.sanmi.site/</id>
+  
+  <author>
+    <name>SanmiYoo</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>me</title>
+    <link href="http://blog.sanmi.site/2019/05/10/me/"/>
+    <id>http://blog.sanmi.site/2019/05/10/me/</id>
+    <published>2019-05-10T05:18:24.000Z</published>
+    <updated>2019-05-10T05:18:24.438Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
