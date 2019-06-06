@@ -332,10 +332,10 @@
       
         
           
-            <p>因为Docker for Mac的实现与Docker for Linux的实现有些不一样，所以在Mac上，当容器需要与宿主机进行通信的时候，发现直接访问宿主机的IP（ 172.17.0.1）是访问不通的。<br>当尝试访问宿主机的一个端口时，会提示Connection refused.</p>
+            <p>因为Docker for Mac的实现与Docker for Linux的实现有些不一样，所以在Mac上，当容器需要与宿主机进行通信的时候，发现直接访问宿主机的IP（ 172.17.0.1）是访问不通的。Mac的宿主机上，也没有docker0这个虚拟网卡。<br>当尝试访问宿主机的一个端口时，会提示Connection refused.</p>
 <p>在container中应当使用一个特殊的DNS来访问宿主机<code>docker.for.mac.host.internal</code></p>
 <p>参考链接：(<a href="https://imhanjm.com/2018/12/16/macos%20docker%20container%E8%BF%9E%E6%8E%A5%E5%AE%BF%E4%B8%BB%E6%9C%BA172.17.0.1%E7%9A%84%E5%8A%9E%E6%B3%95/" target="_blank" rel="noopener">Macos Docker container连接宿主机172.17.0.1的办法
-</a>)</p>
+</a></p>
 
           
         

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.sanmi.site/"/>
-  <updated>2019-06-06T01:49:18.968Z</updated>
+  <updated>2019-06-06T02:20:02.579Z</updated>
   <id>http://blog.sanmi.site/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://blog.sanmi.site/2019/06/06/Docker-for-Mac%E4%B8%8E%E5%AE%BF%E4%B8%BB%E6%9C%BA%E9%80%9A%E4%BF%A1/"/>
     <id>http://blog.sanmi.site/2019/06/06/Docker-for-Mac与宿主机通信/</id>
     <published>2019-06-06T01:42:12.000Z</published>
-    <updated>2019-06-06T01:49:18.968Z</updated>
+    <updated>2019-06-06T02:20:02.579Z</updated>
     
-    <content type="html"><![CDATA[<p>因为Docker for Mac的实现与Docker for Linux的实现有些不一样，所以在Mac上，当容器需要与宿主机进行通信的时候，发现直接访问宿主机的IP（ 172.17.0.1）是访问不通的。<br>当尝试访问宿主机的一个端口时，会提示Connection refused.</p><p>在container中应当使用一个特殊的DNS来访问宿主机<code>docker.for.mac.host.internal</code></p><p>参考链接：(<a href="https://imhanjm.com/2018/12/16/macos%20docker%20container%E8%BF%9E%E6%8E%A5%E5%AE%BF%E4%B8%BB%E6%9C%BA172.17.0.1%E7%9A%84%E5%8A%9E%E6%B3%95/" target="_blank" rel="noopener">Macos Docker container连接宿主机172.17.0.1的办法</a>)</p>]]></content>
+    <content type="html"><![CDATA[<p>因为Docker for Mac的实现与Docker for Linux的实现有些不一样，所以在Mac上，当容器需要与宿主机进行通信的时候，发现直接访问宿主机的IP（ 172.17.0.1）是访问不通的。Mac的宿主机上，也没有docker0这个虚拟网卡。<br>当尝试访问宿主机的一个端口时，会提示Connection refused.</p><p>在container中应当使用一个特殊的DNS来访问宿主机<code>docker.for.mac.host.internal</code></p><p>参考链接：(<a href="https://imhanjm.com/2018/12/16/macos%20docker%20container%E8%BF%9E%E6%8E%A5%E5%AE%BF%E4%B8%BB%E6%9C%BA172.17.0.1%E7%9A%84%E5%8A%9E%E6%B3%95/" target="_blank" rel="noopener">Macos Docker container连接宿主机172.17.0.1的办法</a></p>]]></content>
     
     <summary type="html">
     
