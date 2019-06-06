@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.sanmi.site/"/>
-  <updated>2019-06-06T07:30:51.780Z</updated>
+  <updated>2019-06-06T07:32:34.065Z</updated>
   <id>http://blog.sanmi.site/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://blog.sanmi.site/2019/06/06/wget%E5%A4%87%E5%BF%98%E5%BD%95/"/>
     <id>http://blog.sanmi.site/2019/06/06/wget备忘录/</id>
     <published>2019-06-06T07:27:42.000Z</published>
-    <updated>2019-06-06T07:30:51.780Z</updated>
+    <updated>2019-06-06T07:32:34.065Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>## 使用wget克隆网站</strong></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -k -p -nH -N http://xxxweb.com</span><br></pre></td></tr></table></figure><p><strong><em>\</em>各参数说明**</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">-k     把已下载文件中的所有链接都转换为本地引用，不再依赖原始或在线内容</span><br><span class="line">-p     下载所有必要文件，确保离线可用，包括图片和样式表</span><br><span class="line">-nH    禁止把文件下载到以主机名为前缀的文件夹中</span><br><span class="line">-N     启用文件的时间戳，以匹配来源的时间戳</span><br><span class="line"></span><br><span class="line">下面两项可选:</span><br><span class="line">-r     递归下载</span><br><span class="line">-l     指定最大的递归深度，0为无限。</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h3 id="使用wget克隆网站"><a href="#使用wget克隆网站" class="headerlink" title="使用wget克隆网站"></a>使用wget克隆网站</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -k -p -nH -N http://xxxweb.com</span><br></pre></td></tr></table></figure><p><strong>各参数说明</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">-k     把已下载文件中的所有链接都转换为本地引用，不再依赖原始或在线内容</span><br><span class="line">-p     下载所有必要文件，确保离线可用，包括图片和样式表</span><br><span class="line">-nH    禁止把文件下载到以主机名为前缀的文件夹中</span><br><span class="line">-N     启用文件的时间戳，以匹配来源的时间戳</span><br><span class="line"></span><br><span class="line">下面两项可选:</span><br><span class="line">-r     递归下载</span><br><span class="line">-l     指定最大的递归深度，0为无限。</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
