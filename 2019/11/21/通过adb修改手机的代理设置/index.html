@@ -89,12 +89,12 @@
 <meta property="og:site_name" content="Sanmi&#39;s blog">
 <meta property="og:description" content="通过adb修改手机的代理设置0x00 前置在使用MUMU模拟器的时候，经常重启模拟器卡在99%的位置起不来，按照官方指引排错之后依然无法解决问题。后来联系MUMU的同事，经过确认，如果模拟器设置了系统代理没有关闭，重启后就会卡在99%。 但是，卡在99%的时候，是可以通过adb进入系统的。此时，可以通过adb修改手机的代理设置，然后重启就OK了。 0x01 如何修改方法一 网上百度到的方法大都是这">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://blog.sanmi.site/2019/11/21/通过adb修改手机的代理设置/.images/image-20191121102144577.png">
-<meta property="og:updated_time" content="2019-11-21T02:35:16.491Z">
+<meta property="og:image" content="http://blog.sanmi.site/images/image-20191121102144577.png">
+<meta property="og:updated_time" content="2019-11-21T02:40:19.220Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="通过adb修改手机的代理设置">
 <meta name="twitter:description" content="通过adb修改手机的代理设置0x00 前置在使用MUMU模拟器的时候，经常重启模拟器卡在99%的位置起不来，按照官方指引排错之后依然无法解决问题。后来联系MUMU的同事，经过确认，如果模拟器设置了系统代理没有关闭，重启后就会卡在99%。 但是，卡在99%的时候，是可以通过adb进入系统的。此时，可以通过adb修改手机的代理设置，然后重启就OK了。 0x01 如何修改方法一 网上百度到的方法大都是这">
-<meta name="twitter:image" content="http://blog.sanmi.site/2019/11/21/通过adb修改手机的代理设置/.images/image-20191121102144577.png">
+<meta name="twitter:image" content="http://blog.sanmi.site/images/image-20191121102144577.png">
 
 
 
@@ -350,7 +350,7 @@
 <p>网上百度到的方法大都是这样的：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#设置代理：</span></span><br><span class="line">adb shell settings put global http_proxy 代理IP地址:端口号</span><br><span class="line">如：</span><br><span class="line">adb shell settings put global http_proxy 127.0.0.1:8888</span><br><span class="line"></span><br><span class="line"><span class="comment"># 移除代理：</span></span><br><span class="line">adb shell settings delete global http_proxy</span><br><span class="line">adb shell settings delete global global_http_proxy_host</span><br><span class="line">adb shell settings delete global global_http_proxy_port</span><br></pre></td></tr></table></figure>
 <p>但是，这个方法对对MUMU不起作用，都是提示没有删除。</p>
-<p><img src=".images/image-20191121102144577.png" alt="image-20191121102144577"></p>
+<p><img src="/images/image-20191121102144577.png" alt="image-20191121102144577"></p>
 <p><strong>方法二</strong></p>
 <p>经过研究，发现了方法二，确认有效。 </p>
 <ol>
