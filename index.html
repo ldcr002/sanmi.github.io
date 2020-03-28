@@ -394,7 +394,7 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">	alert(<span class="string">'dafaf'</span>)</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
 <p>可以对dafaf施行16进制编码Unicode编码形式以及斜杠转义形式<br>只可以对alert施行Unicode编码<br>不能对<code>(&#39;&#39;)</code>编码</p>
 <p>我们来分析一下JavaScript解析的一个细节，Javascript解析器工作的时候将\u0061\u006c\u0065\u0072\u0074进行js解码后为“alert”，而“alert”是一个有效的标识符名称，它是能被正常解析的。<strong>像圆括号、双引号、单引号等等这些控制字符，在进行JavaScript解析的时候仅会被解码为字符串文本或者上面讲的标识符名称</strong>，例如：<code>&lt;script&gt;alert(&#39;LDkR\u0027)&lt;/script&gt;</code>对控制字符单引号进行js编码，解析时\u0027被解码成文本单引号，无法闭合因此不能成功执行。</p>
-<h4 id="2-3-URL编码适用位置"><a href="#2-3-URL编码适用位置" class="headerlink" title="2.3 URL编码适用位置"></a>2.3 URL编码适用位置</h4><p>URL编码则只适用于为URL的属性值，且只能对URL中的参数进行URL编码。比如：<a>标签的href属性、<iframe>的src属性等。</iframe></a></p>
+<h4 id="2-3-URL编码适用位置"><a href="#2-3-URL编码适用位置" class="headerlink" title="2.3 URL编码适用位置"></a>2.3 URL编码适用位置</h4><p>URL编码则只适用于为URL的属性值，且只能对URL中的参数进行URL编码。比如：<a>标签的href属性、<code>&lt;iframe&gt;</code>的src属性等。</a></p>
 <h3 id="3-浏览器解析顺序"><a href="#3-浏览器解析顺序" class="headerlink" title="3. 浏览器解析顺序"></a>3. 浏览器解析顺序</h3><p>既然各个编码有适合自己的位置，并且这种位置必定会重合，所以，浏览器解码必定有一定的顺序。</p>
 <p>首先浏览器接收到一个HTML文档时，会触发HTML解析器对HTML文档进行词法解析，这一过程完成HTML解码并创建DOM树，接下来JavaScript解析器会介入对内联脚本进行解析，这一过程完成JS的解码工作，如果浏览器遇到需要URL的上下文环境，这时URL解析器也会介入完成URL的解码工作，URL解析器的解码顺序会根据URL所在位置不同，可能在JavaScript解析器之前或之后解析。</p>
 <p>浏览器无论什么情况都会遵守一个这样的解码规则：</p>
